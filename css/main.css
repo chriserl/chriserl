@@ -12,4 +12,200 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
 }
+
+a {
+  text-decoration: none;
+  color: #0065c4;
+}
+
+body {
+  width: calc(100vw - calc(calc(1rem + 0.8px) * 3));
+  margin: calc(calc(1rem + 0.8px) * 2) auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  background: url("../assets/background.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 0;
+}
+
+@media screen and (min-width: 600px) {
+  body {
+    width: calc(100vw - calc(calc(1rem + 0.8px) * 14));
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  body {
+    width: calc(100vw - calc(calc(1rem + 0.8px) * 14));
+    height: 100vh;
+    overflow-y: hidden;
+  }
+}
+
+body header p {
+  font-size: 0.88rem;
+  font-weight: normal;
+  color: #666666;
+}
+
+body main {
+  width: 100%;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  margin-top: calc(calc(1rem + 0.8px) * 4);
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(285px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(285px, 1fr));
+  grid-column-gap: calc(1rem + 0.8px);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (min-width: 1024px) {
+  body main {
+    margin-top: calc(calc(1rem + 0.8px) * 2);
+    margin-bottom: auto;
+  }
+}
+
+body main .main-content {
+  width: 96%;
+  margin-top: calc(1rem + 0.8px);
+  margin-bottom: calc(calc(1rem + 0.8px) * 6);
+}
+
+@media screen and (min-width: 600px) {
+  body main .main-content {
+    width: 72%;
+    margin-bottom: 0;
+  }
+}
+
+body main .main-content .main-text {
+  margin-bottom: calc(calc(1rem + 0.8px) * 6);
+}
+
+body main .main-content .main-text .intro-text {
+  margin-bottom: calc(calc(1rem + 0.8px) * 2);
+}
+
+body main .main-content .main-text .intro-text .welcome-text {
+  font-size: 3.2rem;
+  font-weight: bolder;
+  margin-bottom: 0.48rem;
+}
+
+body main .main-content .main-text .intro-text .welcome-aux {
+  font-size: 1rem;
+  font-weight: normal;
+  color: #666666;
+}
+
+body main .main-content .main-text .intro-desc {
+  color: #202020;
+}
+
+body main .main-content .cta {
+  font-size: 0.88rem;
+  font-weight: normal;
+  text-transform: uppercase;
+  padding: 0.8rem 2.4rem;
+  text-align: center;
+  color: white;
+  background: #15222e;
+  border: 2px solid #e7f7ff;
+  border-radius: 28px;
+}
+
+body main nav {
+  width: 100%;
+  margin-bottom: calc(calc(1rem + 0.8px) * 6);
+}
+
+@media screen and (min-width: 600px) {
+  body main nav {
+    margin-top: calc(calc(1rem + 0.8px) * 4);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  body main nav {
+    margin-top: 0;
+  }
+}
+
+body main nav .nav-items {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(156px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(156px, 1fr));
+  grid-gap: calc(calc(1rem + 0.8px) * 2);
+}
+
+@media screen and (min-width: 600px) {
+  body main nav .nav-items {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+body main nav .nav-items .nav-item {
+  font-size: 0.88rem;
+  font-weight: normal;
+  font-weight: bold;
+  list-style-type: none;
+  padding: calc(calc(1rem + 0.8px) * 3);
+  border-radius: calc(1rem + 0.8px);
+  background: #ffffff;
+  border: 0.45px solid #eaeaea;
+  -webkit-box-shadow: 2px 4.5px 24px 2px rgba(0, 0, 0, 0.035);
+          box-shadow: 2px 4.5px 24px 2px rgba(0, 0, 0, 0.035);
+}
+
+@media screen and (min-width: 600px) {
+  body main nav .nav-items .nav-item {
+    padding: calc(calc(1rem + 0.8px) * 4);
+  }
+}
+
+body main nav .nav-items .nav-item .nav-link {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  margin: auto;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #020b12;
+}
+
+body main nav .nav-items .nav-item .nav-link img {
+  margin-right: 0.56rem;
+  width: calc(1rem + 0.8px);
+}
+
+body footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  margin-bottom: 4%;
+  font-size: 0.88rem;
+  font-weight: normal;
+  color: #666666;
+  padding-bottom: calc(1rem + 0.8px);
+}
 /*# sourceMappingURL=main.css.map */

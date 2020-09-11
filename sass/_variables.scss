@@ -1,2 +1,15 @@
+//BASE SIZING (FONT AND SPACING)
 $base-fontSize: calc(14px + 0.16vw);
-$base-spaceSize: calc($base-fontSize + 0.8px);
+$base-spaceSize: calc(1rem + 0.8px);
+
+//SPACING
+$space-1: $base-spaceSize;
+$space-2: calc(#{$base-spaceSize} * 2);
+$space-25: calc(#{$base-spaceSize} * 3);
+$space-3: calc(#{$base-spaceSize} * 4);
+$space-4: calc(#{$base-spaceSize} * 6);
+$space-5: calc(#{$base-spaceSize} * 8);
+$space-6: calc(#{$base-spaceSize} * 10);
+$space-7: calc(#{$base-spaceSize} * 12);
+$space-8: calc(#{$base-spaceSize} * 14);
+$space-9: calc(#{$base-spaceSize} * 16);

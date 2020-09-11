@@ -1,0 +1,42 @@
+//Media Queries
+
+@mixin mediaMd {
+  @media screen and (min-width: 600px) {
+    @content;
+  }
+}
+
+@mixin mediaLd {
+  @media screen and (min-width: 1024px) {
+    @content;
+  }
+}
+
+//TEXT STYLES
+@mixin h1 {
+  font-size: 3.2rem;
+  font-weight: bolder;
+}
+
+@mixin p1 {
+  font-size: 1rem;
+  font-weight: normal;
+}
+
+@mixin p2 {
+  font-size: 0.88rem;
+  font-weight: normal;
+}
+
+//COMPONENTS
+//Buttons
+@mixin prim-btn {
+  @include p2;
+  text-transform: uppercase;
+  padding: 0.8rem 2.4rem;
+  text-align: center;
+  color: white;
+  background: #15222e;
+  border: 2px solid #e7f7ff;
+  border-radius: 28px;
+}
