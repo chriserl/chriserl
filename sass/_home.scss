@@ -30,14 +30,13 @@ body {
     width: 100%;
     height: max-content;
     margin-top: $space-3;
-    //margin-bottom: auto;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(285px, 1fr));
     grid-column-gap: $space-1;
     align-items: center;
 
     @include mediaLd {
-      margin-top: $space-2;
+      margin-top: 0;
       margin-bottom: auto;
     }
 
@@ -49,17 +48,19 @@ body {
       @include mediaMd {
         width: 72%;
         margin-bottom: 0;
+        margin-top: 0;
       }
 
       .main-text {
-        margin-bottom: $space-4;
+        margin-bottom: $space-3;
 
         .intro-text {
           margin-bottom: $space-2;
 
           .welcome-text {
             @include h1;
-            margin-bottom: 0.48rem;
+            line-height: $space-3;
+            margin-bottom: 0.32rem;
           }
 
           .welcome-aux {
@@ -80,6 +81,8 @@ body {
 
     nav {
       width: 100%;
+      height: 100%;
+      margin-top: auto;
       margin-bottom: $space-4;
 
       @include mediaMd {
@@ -91,6 +94,7 @@ body {
       }
 
       .nav-items {
+        margin-top: 20%;
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(156px, 1fr));
         grid-gap: $space-2;
@@ -110,7 +114,7 @@ body {
           box-shadow: 2px 4.5px 24px 2px rgba(0, 0, 0, 0.035);
 
           @include mediaMd {
-            padding: $space-3;
+            padding: $space-3 $space-2;
           }
 
           .nav-link {

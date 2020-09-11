@@ -81,7 +81,7 @@ body main {
 
 @media screen and (min-width: 1024px) {
   body main {
-    margin-top: calc(calc(1rem + 0.8px) * 2);
+    margin-top: 0;
     margin-bottom: auto;
   }
 }
@@ -96,11 +96,12 @@ body main .main-content {
   body main .main-content {
     width: 72%;
     margin-bottom: 0;
+    margin-top: 0;
   }
 }
 
 body main .main-content .main-text {
-  margin-bottom: calc(calc(1rem + 0.8px) * 6);
+  margin-bottom: calc(calc(1rem + 0.8px) * 4);
 }
 
 body main .main-content .main-text .intro-text {
@@ -108,9 +109,10 @@ body main .main-content .main-text .intro-text {
 }
 
 body main .main-content .main-text .intro-text .welcome-text {
-  font-size: 3.2rem;
+  font-size: 4rem;
   font-family: PoppinsBold;
-  margin-bottom: 0.48rem;
+  line-height: calc(calc(1rem + 0.8px) * 4);
+  margin-bottom: 0.32rem;
 }
 
 body main .main-content .main-text .intro-text .welcome-aux {
@@ -138,6 +140,8 @@ body main .main-content .cta {
 
 body main nav {
   width: 100%;
+  height: 100%;
+  margin-top: auto;
   margin-bottom: calc(calc(1rem + 0.8px) * 6);
 }
 
@@ -154,6 +158,7 @@ body main nav {
 }
 
 body main nav .nav-items {
+  margin-top: 20%;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (minmax(156px, 1fr))[auto-fit];
@@ -184,7 +189,7 @@ body main nav .nav-items .nav-item {
 
 @media screen and (min-width: 600px) {
   body main nav .nav-items .nav-item {
-    padding: calc(calc(1rem + 0.8px) * 4);
+    padding: calc(calc(1rem + 0.8px) * 4) calc(calc(1rem + 0.8px) * 2);
   }
 }
 
