@@ -193,10 +193,18 @@ body main nav .nav-items .nav-item {
   }
 }
 
+body main nav .nav-items .nav-item:hover {
+  -webkit-box-shadow: 1.6px 3.2px 24px 4.8px rgba(0, 0, 0, 0.096);
+          box-shadow: 1.6px 3.2px 24px 4.8px rgba(0, 0, 0, 0.096);
+}
+
 body main nav .nav-items .nav-item .nav-link {
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
   margin: auto;
   text-align: center;
   display: -webkit-box;
@@ -209,7 +217,8 @@ body main nav .nav-items .nav-item .nav-link {
 }
 
 body main nav .nav-items .nav-item .nav-link img {
-  margin-right: 0.56rem;
+  margin-right: 0.88rem;
+  margin-bottom: 0.16rem;
   width: calc(1rem + 0.8px);
 }
 
